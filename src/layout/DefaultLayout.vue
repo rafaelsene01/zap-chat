@@ -23,31 +23,24 @@ const selected = ref('dashboard')
 
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="selected"
-      nav
-      class="pt-4"
-      expand-on-hover
-      color="grey-lighten-3"
-      rail
-    >
-      <v-list density="compact" nav>
-        <v-list-item
-          v-for="item in menu"
-          :key="item.title"
-          :to="`/${item.link}`"
-          :value="item.link"
-        >
-          <template #prepend="{ isActive }">
+    <v-navigation-drawer v-model="selected" class="pt-10" color="grey-lighten-3" width="92">
+      <v-list-item
+        class="px-4"
+        v-for="item in menu"
+        :key="item.title"
+        :to="`/${item.link}`"
+        :value="item.link"
+      >
+        <template #default="{ isActive }">
+          <div
+            class="d-flex flex-column justify-center align-center text-body-2"
+            :class="{ 'text-secondary': isActive }"
+          >
             <IconVue :name="item.icon" :active="isActive" />
-          </template>
-          <template #default>
-            <div class="px-2">
-              {{ item.title }}
-            </div>
-          </template>
-        </v-list-item>
-      </v-list>
+            {{ item.title }}
+          </div>
+        </template>
+      </v-list-item>
     </v-navigation-drawer>
 
     <v-main>

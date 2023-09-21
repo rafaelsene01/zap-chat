@@ -9,7 +9,7 @@ const props = defineProps({
     default: 24
   },
   active: {
-    default: false
+    default: true
   }
 })
 

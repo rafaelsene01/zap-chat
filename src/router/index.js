@@ -11,8 +11,8 @@ const router = createRouter({
       children: [
         {
           path: '',
-          name: 'home',
-          component: () => import('../views/HomeView.vue')
+          name: 'dashboard',
+          component: () => import('../views/DashboardView.vue')
         },
         {
           path: ':whatsapp_id',

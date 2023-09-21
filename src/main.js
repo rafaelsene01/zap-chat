@@ -13,7 +13,17 @@ import * as directives from 'vuetify/directives'
 
 const vuetify = createVuetify({
   components,
-  directives
+  directives,
+  theme: {
+    themes: {
+      dark: false,
+      light: {
+        colors: {
+          secondary: '#04AB29'
+        }
+      }
+    }
+  }
 })
 
 const app = createApp(App)
