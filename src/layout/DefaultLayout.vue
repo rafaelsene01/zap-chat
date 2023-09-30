@@ -13,6 +13,16 @@ const menu = ref([
     title: 'Contatos',
     icon: 'contatos',
     link: 'contatos'
+  },
+  {
+    title: 'Funcionários',
+    icon: 'funcionarios',
+    link: 'funcionarios'
+  },
+  {
+    title: 'Financeiro',
+    icon: 'financeiro',
+    link: 'financeiro'
   }
 ])
 </script>

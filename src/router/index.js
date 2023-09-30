@@ -45,6 +45,28 @@ const router = createRouter({
       ]
     },
     {
+      path: '/funcionarios',
+      component: DefaultTemplate,
+      children: [
+        {
+          path: '',
+          name: 'funcionarios',
+          component: () => import('../views/EmployeesView.vue')
+        }
+      ]
+    },
+    {
+      path: '/financeiro',
+      component: DefaultTemplate,
+      children: [
+        {
+          path: '',
+          name: 'financeiro',
+          component: () => import('../views/FinancialView.vue')
+        }
+      ]
+    },
+    {
       path: '/:pathMatch(.*)*',
       redirect: () => {
         return 'dashboard'
