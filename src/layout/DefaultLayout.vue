@@ -41,8 +41,6 @@ const menu = ref([
       </template>
     </v-list-item>
 
-    <v-spacer></v-spacer>
-
     <!-- @click="exit" -->
     <template v-slot:append>
       <v-hover v-slot="{ isHovering, props }">
