@@ -9,6 +9,11 @@ const menu = ref([
     link: 'campanha'
   },
   {
+    title: 'Mensagens',
+    icon: 'mensagens',
+    link: 'mensagens'
+  },
+  {
     title: 'Automação',
     icon: 'bot',
     link: 'automacao'

@@ -25,6 +25,11 @@ const router = createRouter({
               component: () => import('../views/whatsapp/CampaignView.vue')
             },
             {
+              path: 'mensagens',
+              name: 'mensagens',
+              component: () => import('../views/whatsapp/MessageView.vue')
+            },
+            {
               path: 'automacao',
               name: 'automacao',
               component: () => import('../views/whatsapp/BotView.vue')
