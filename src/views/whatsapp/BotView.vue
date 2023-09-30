@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>Contatos</h1>
+    <h1>Bot</h1>
   </div>
 </template>

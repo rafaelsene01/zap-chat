@@ -22,7 +22,12 @@ const router = createRouter({
             {
               path: 'campanha',
               name: 'campanha',
-              component: () => import('../views/CampaignView.vue')
+              component: () => import('../views/whatsapp/CampaignView.vue')
+            },
+            {
+              path: 'automacao',
+              name: 'automacao',
+              component: () => import('../views/whatsapp/BotView.vue')
             }
           ]
         }

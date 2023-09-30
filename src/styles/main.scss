@@ -1,1 +1,7 @@
 @use 'vuetify';
+
+html,
+body,
+#app {
+  height: 100vh !important;
+}
