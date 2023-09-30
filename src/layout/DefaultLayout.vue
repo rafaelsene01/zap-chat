@@ -40,6 +40,17 @@ const menu = ref([
         </div>
       </template>
     </v-list-item>
+
+    <v-spacer></v-spacer>
+
+    <!-- @click="exit" -->
+    <template v-slot:append>
+      <v-hover v-slot="{ isHovering, props }">
+        <v-list-item class="d-flex justify-center">
+          <IconVue name="sair" :active="isHovering" v-bind="props" size="28" />
+        </v-list-item>
+      </v-hover>
+    </template>
   </v-navigation-drawer>
 
   <v-main>
